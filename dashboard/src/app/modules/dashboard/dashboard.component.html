@@ -1,16 +1,28 @@
-<div>Line Charts</div>
-<mat-divider></mat-divider>
-
 <div>
-    
-    <div>Line Chart1</div>
-    <div>Line Chart2</div>
-    <div>Line Chart2</div>
-    <div>Line Chart2</div>
+    <app-widget-area></app-widget-area>
 </div>
-
 <mat-divider></mat-divider>
-<div>
-    <div>Table</div>
-    <div>Pie Chart</div>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+    <mat-cards fxFlex="25">
+        <app-widget-card label="temperature" max></app-widget-card>
+    </mat-cards>
+    <mat-cards fxFlex="25">
+        <app-widget-card></app-widget-card>
+    </mat-cards>
+    <mat-cards fxFlex="25">
+        <app-widget-card></app-widget-card>
+    </mat-cards>
+    <mat-cards fxFlex="25">
+        <app-widget-card></app-widget-card>
+    </mat-cards>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div fxFlex="60">Table</div>
+    <div fxFlex="40">
+        <app-widget-pie></app-widget-pie>
+    </div>
 </div>
