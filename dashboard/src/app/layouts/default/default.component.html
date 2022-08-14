@@ -1,4 +1,4 @@
-<app-header></app-header>
+<app-header (toggleSidebarforMe)="sidebarToggler()"></app-header>
 <mat-drawer-container>
     <mat-drawer mode="side" [opened]="sideBarOpen">
         <app-sidebar></app-sidebar>
